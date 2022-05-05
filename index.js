@@ -22,6 +22,8 @@ $("#submit").click(function() {
     const password = $(".password")[0].value;
     if(username == "AA" && password == "a") {
         console.log('successful login');
+        $(".password")[0].value = "";
+        $(".username")[0].value = "";
     } else {
         console.log('username or password incorrect');
     }
